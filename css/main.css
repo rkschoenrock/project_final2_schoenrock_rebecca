@@ -1,10 +1,28 @@
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	margin: auto;
+	display: block;
+}
+
+header h2 {
+	text-align: center;
+}
+
+section {
+	width: 100%;
+	background-image: url("../img/bkgd2.png");
 }
