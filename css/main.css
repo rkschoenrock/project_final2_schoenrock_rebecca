@@ -52,6 +52,8 @@ h3 {
 	font-size: 48px;
 	font-weight: 300;
 	color: #e64a4a;
+	text-align: center;
+	margin: 10px;
 }
 
 h4 {
@@ -59,10 +61,11 @@ h4 {
 	font-size: 28px;
 	font-weight: 300;
 	color: #5dbdea;
+	text-align: center;
+	margin: 10px;
 }
 
-p,
-button {
+p {
 	font-family: Geneva;
 	color: #2f2f2f;
 }
@@ -76,8 +79,36 @@ a:hover {
 	color: #295fb0;
 }
 
+button {
+	padding: 20px;
+	margin: 5px;
+	border: none;
+	display: block;
+	background-color: #5dbdea;
+	color: white;
+	font-family: Geneva;
+}
+
+button:hover {
+	background-color: #295fb0;
+}
+
 article {
 	background-color: white;
+}
+
+#structure-article {
+	padding: 20px;
+	border-top: 1px solid #5dbdea;
+}
+
+@media all and (min-width: 600px) {
+	#structure-article {
+		width: calc(100% / 3 * 2);
+		margin: 20px;
+		border: 1px solid #5dbdea;
+		float: right;
+	}
 }
 
 .textures {
@@ -86,6 +117,7 @@ article {
 
 @media all and (min-width: 500px) {
 	#texture-article {
+		clear: both;
 		width: 80%;
 		margin: 20px auto;
 		padding: 10px;
