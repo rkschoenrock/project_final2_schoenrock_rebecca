@@ -9,6 +9,21 @@
 	width: 1px;
 }
 
+@font-face {
+	font-family: Variane;
+	src: url(../fonts/Variane Script.ttf);
+}
+
+@font-face {
+	font-family: Typoster;
+	src: url(../fonts/Typoster.otf);
+}
+
+@font-face {
+	font-family: Geneva;
+	src: url(../fonts/Geneva.ttf);
+}
+
 header {
 	width: 100%;
 }
