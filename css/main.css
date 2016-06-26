@@ -42,10 +42,6 @@ header h2 {
 	color: #295fb0;
 }
 
-header h2:hover {
-	color: #5dbdea;
-}
-
 section {
 	width: 100%;
 	background-image: url("../img/bkgd2.png");
@@ -84,4 +80,30 @@ a {
 
 a:hover {
 	color: #295fb0;
+}
+
+article {
+	background-color: white;
+}
+
+.textures {
+	width: 100%;
+	margin: 5px;
+	border: 1px solid #ffffff;
+}
+
+.textures:hover {
+	border: 1px solid #5dbdea;
+}
+
+@media all and (min-width: 500px) {
+	#texture-article {
+		width: 80%;
+		margin: 20px auto;
+		padding: 10px;
+		border: 1px solid #5dbdea;
+	}
+	.textures {
+		width: calc(100% / 3 - 12px);
+	}
 }
