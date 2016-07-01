@@ -26,6 +26,7 @@
 
 header {
 	width: 100%;
+	background-color: #ffffff;
 }
 
 header img {
@@ -40,6 +41,7 @@ header h2 {
 	font-size: 48px;
 	font-weight: 300;
 	color: #295fb0;
+	margin: 20px;
 }
 
 main {
@@ -97,17 +99,87 @@ article {
 	background-color: white;
 }
 
-#structure-article {
+#structure-article,
+#color-article {
 	padding: 20px;
 	border-top: 1px solid #5dbdea;
 }
 
-@media all and (min-width: 600px) {
+ul {
+	width: 90%;
+	margin-left: -20px;
+	text-align: center;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+.colors {
+	width: 100%;
+	margin: auto;
+}
+
+#color1 {
+	background-color: #ffc941;
+}
+
+#color2 {
+	background-color: #5dbdea;
+}
+
+#color3 {
+	background-color: #e64a4a;
+}
+
+#color4 {
+	background-color: #f4f171;
+}
+
+#color5 {
+	background-color: #8d6252;
+}
+
+#color6 {
+	background-color: #295fb0;
+}
+
+@media all and (min-width: 500px) and (max-width: 700px) {
 	#structure-article {
-		width: calc(100% / 3 * 2);
+		border-bottom: 1px solid #5dbdea;
+	}
+	#color-article {
+		width: 80%;
+		margin: 20px auto;
+		border: 1px solid #5dbdea;
+	}
+}
+
+@media all and (min-width: 700px) {
+	.wrapper {
+		width: 80%;
+		margin: auto;
+	}
+	#structure-article {
+		width: calc(100% / 3 * 2 - 40px);
 		margin: 20px;
 		border: 1px solid #5dbdea;
-		float: right;
+		float: left;
+		display: inline-block;
+	}
+	#color-article {
+		width: calc(100% / 3 - 130px);
+		margin: 20px;
+		border: 1px solid #5dbdea;
+		float: left;
+		display: inline-block;
+		vertical-align: top;
+	}
+	ul {
+		width: 80%;
 	}
 }
 
@@ -124,8 +196,8 @@ article {
 		border: 1px solid #5dbdea;
 	}
 	.textures {
-		width: calc(100% / 3 - 12px);
-		margin: 5px;
+		width: calc(100% / 3 - 22px);
+		margin: 10px;
 		border: 1px solid #ffffff;
 	}
 	.textures:hover {
