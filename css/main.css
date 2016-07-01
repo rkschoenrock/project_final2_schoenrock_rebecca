@@ -41,7 +41,8 @@ header h2 {
 	font-size: 48px;
 	font-weight: 300;
 	color: #295fb0;
-	margin: 20px;
+	margin: 19px;
+	padding: 1px;
 }
 
 main {
@@ -150,11 +151,15 @@ ul li {
 @media all and (min-width: 500px) and (max-width: 700px) {
 	#structure-article {
 		border-bottom: 1px solid #5dbdea;
+		margin-top: 40px;
+		position: relative;
 	}
 	#color-article {
 		width: 80%;
-		margin: 20px auto;
+		margin: 10px auto;
+		top: 20px;
 		border: 1px solid #5dbdea;
+		position: relative;
 	}
 }
 
